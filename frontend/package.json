@@ -1,7 +1,11 @@
 {
+  "homepage": "https://vijay263601.github.io/Travel_Booking_App/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,9 +20,12 @@
     "reactstrap": "^9.1.5",
     "remixicon": "^2.5.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
